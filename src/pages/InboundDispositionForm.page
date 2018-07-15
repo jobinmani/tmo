@@ -1,0 +1,31 @@
+<apex:page standardController="case"> 
+<apex:form id="InboundDispositionForm"> 
+<apex:pageBlock title="InboundDispositionForm"> 
+<apex:pageBlockSection columns="1">
+<apex:inputCheckbox value="{!case.Failed_Order__c  }"/> 
+<apex:inputField value="{!case.TOM_Order_Number__c}" required="true"/>
+<apex:inputField value="{!case.Web_Order_ID__c}"/>
+<apex:inputField value="{!case.Contact_First_Name__c}" />
+<apex:inputField value="{!case.Contact_Last_Name__c}"/>
+<apex:inputField value="{!case.Home_Phone__c}"/>
+<apex:inputfield value="{!case.E_Mail__c}"/>
+<apex:inputField value="{!case.Inbound_Order_status__c  }" required="true" />
+<apex:inputField value="{!case.InboundDisposition_Reason__c}" required="true" />
+<apex:inputField value="{!case.CustomerCall_Reason__c}" style="width:500px"/>
+
+ 
+ 
+<apex:panelGrid columns="12" columnClasses="col1,col2" cellpadding="1">
+         <apex:outputLabel ><b>User ID</b></apex:outputLabel>
+         <apex:outputtext value="{!$User.Username}"/>      
+</apex:panelGrid>
+
+
+
+</apex:pageBlockSection> 
+<div align="center" draggable="false" >
+<apex:commandButton value="Save" action="{!save}"/>
+</div> 
+</apex:pageBlock>
+</apex:form> 
+</apex:page>
