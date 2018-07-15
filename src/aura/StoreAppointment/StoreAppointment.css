@@ -1,0 +1,12 @@
+.THIS .myCheckbox{
+  display: inline-block;
+  float: left;
+}
+
+.THIS .myCheckbox1{
+  display: none;
+  float: left;
+}
+.THIS .myinput{
+    input:none;
+}
