@@ -1,6 +1,0 @@
-({
-	scheduleUpdateOnLead : function(comp) {
-		
-        
-	}
-})

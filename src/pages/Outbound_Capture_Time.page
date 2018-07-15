@@ -1,1 +1,0 @@
-<apex:page standardController="case" extensions="OutboundCaptureTimeController" action="{!redirect}"/>
